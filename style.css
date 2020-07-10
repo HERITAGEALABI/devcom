@@ -1,25 +1,56 @@
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
 }
-.logo{
-    margin-left: 3%;
-    font-size: 3vh;
-}
-.nav-region{
-    display: flex;
-    justify-content: space-between;
-}
+/*Navigation and navigation links*/
 nav {
     width: 100%;
-}
-
-nav a{
-   word-spacing: normal;
-    font-size: 18px;
-    text-decoration: none;
-    white-space: nowrap;
+    padding-top: 5px;
+    padding-bottom: 8px;
     color: black;
+    background-color: rgb(255, 255, 255);/*You can edit the background color here*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    position: -webkit-sticky; /*for safari*/
+    top: 0;
+    z-index: 2;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+ li {
+     display: inline;
+     font-size: 2.63vh;
+ }
+ li a {
+     text-decoration: none;
+     color: black;
+ }
+  li a:hover {
+      text-decoration: underline;
+      color: rgb(56, 8, 40);
+  }
+ .logo {
+     padding-bottom: 5px;
+ }
+ .nav-links {
+     float: right;
+     padding: 5px 20px;
+     padding-top: 8px;
+ }
+  nav::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+                                        /*End of top nav*/
 
 }
 button{
